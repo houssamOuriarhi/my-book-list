@@ -5,7 +5,14 @@ class Book {
     this.author = author;
     this.isbn = isbn;
   }
+
+  sayHello() {
+    return `Hello, my name is ${this.author}`;
+  }
 }
+
+const book = new Book('Book', 'Hamid Rajawi', 123456);
+console.log(book.sayHello());
 
 // UI Class: Handle UI Tasks
 
